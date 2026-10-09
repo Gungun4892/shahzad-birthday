@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14091f">
+<title>Happy Birthday Shahzad Ji 💜</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --gold:#f6d98b; --gold2:#fff0bd; --pink:#f7a9cf; }
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:22px 14px;overflow-x:hidden;color:white;font-family:Poppins,sans-serif;background:radial-gradient(ellipse at 15% 10%,#8b45b947,transparent 38%),radial-gradient(ellipse at 90% 85%,#d69b4325,transparent 35%),linear-gradient(145deg,#241033,#100719 55%,#08050e);}
+#stars,#confetti{position:fixed;inset:0;pointer-events:none}#stars{z-index:0}#confetti{z-index:10}
+.star{position:absolute;width:2px;height:2px;background:#fff6d6;border-radius:50%;box-shadow:0 0 8px #ffe7a3;animation:twinkle 3s infinite}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:1}}
+main{width:100%;max-width:420px;position:relative;z-index:2}
+.glass{position:relative;overflow:hidden;padding:30px 23px;border:1px solid #ffffff24;border-radius:30px;text-align:center;background:linear-gradient(145deg,#ffffff16,#ffffff06 55%,#f3d08b09);backdrop-filter:blur(24px);box-shadow:0 25px 75px #00000070,inset 0 1px 0 #ffffff20}
+.glass::before{content:"";position:absolute;top:0;left:15%;width:70%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.eyebrow{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase}
+.gift{font-size:65px;display:inline-block;margin:13px 0 5px;filter:drop-shadow(0 0 22px #f4cf7c70);animation:float 2.5s infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+.script-title{margin:8px 0;font:46px/1.18 "Great Vibes",cursive;color:var(--gold2)}
+.subtitle{color:#e5d9ee;font-size:12px;line-height:1.9;font-weight:300}
+.name{margin:18px 0 8px;font:600 23px "Playfair Display",serif;letter-spacing:2px;color:#fff4d5}
+.date{display:inline-block;margin-top:8px;padding:8px 16px;border:1px solid #f6d98b55;border-radius:50px;color:var(--gold2);font-size:10px;letter-spacing:2px}
+.button{width:100%;margin-top:25px;padding:14px 18px;border:1px solid #fff0c8a6;border-radius:50px;background:linear-gradient(110deg,#e8c16c,#fff0bd,#e7b5d4);color:#291334;font:700 12px Poppins,sans-serif;letter-spacing:1px;cursor:pointer;box-shadow:0 8px 28px #e6bd6233;transition:.25s}
+.button:hover{transform:translateY(-2px)}
+.footer{margin:15px 0 0;text-align:center;color:#e9d5fa99;font:24px "Great Vibes",cursive}
+#surpriseScreen{display:none}.pop{animation:pop .7s both}
+@keyframes pop{from{opacity:0;transform:translateY(22px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+.poster-frame{padding:5px;border:1px solid #f6d98b8a;border-radius:23px;background:linear-gradient(135deg,#f6d98b,#a86cbb,#f8e8b7)}
+.poster{display:block;width:100%;border-radius:18px;background:#21112e}
+.birthday-title{margin:23px 0 7px;font:42px/1.2 "Great Vibes",cursive;color:var(--gold2)}
+.message{margin:12px 0;color:#f0e3f5;font-size:12px;line-height:2;font-weight:300}
+.signature{margin:17px 0 0;font:27px "Great Vibes",cursive;color:var(--pink)}
+.secondary{padding:12px 8px;border:1px solid #ffffff40;border-radius:50px;color:#fff;background:#ffffff08;font:11px Poppins,sans-serif;cursor:pointer;width:100%}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+#shareModal{position:fixed;inset:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(14px);z-index:100;display:none;place-items:center;padding:20px}
+.share-box{background:linear-gradient(145deg,#2e1a4d,#1a0e2e);border:1px solid #ffffff22;border-radius:26px;padding:26px;width:100%;max-width:360px;text-align:center;box-shadow:0 30px 80px #000}
+.share-opt{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);margin:10px 0;cursor:pointer;transition:.25s;color:#fff;text-align:left}
+.share-opt:hover{background:rgba(255,255,255,0.15);transform:translateY(-2px) scale(1.01)}
+/* Auto loader bar */
+#loaderBar{width:100%;height:3px;background:rgba(255,255,255,0.15);border-radius:10px;margin-top:18px;overflow:hidden}
+#loaderProgress{height:100%;width:0%;background:linear-gradient(90deg,#f6d98b,#f7a9cf);border-radius:10px;transition:width 0.1s linear}
+</style>
+</head>
+<body>
+<div id="stars"></div>
+<canvas id="confetti"></canvas>
+<main>
+  <section id="tapScreen" class="glass">
+    <div class="eyebrow">A little surprise for you</div>
+    <div class="gift">🎁</div>
+    <h1 class="script-title">Something Special</h1>
+    <p class="subtitle">A little box full of love,<br>happiness and beautiful memories.</p>
+    <div class="name">SHAHZAD JI</div>
+    <div class="date">OCTOBER 10 · YOUR SPECIAL DAY</div>
+    
+    <div id="loaderBar"><div id="loaderProgress"></div></div>
+    <p id="countText" style="font-size:10px;margin-top:8px;opacity:.6;letter-spacing:1px">OPENING IN 3s...</p>
+
+    <button class="button" id="openBtn">✨ OPEN YOUR SURPRISE ✨</button>
+    <div style="margin-top:20px;color:#f4c8e3;letter-spacing:10px">♡ ✦ ♡</div>
+  </section>
+  <p id="footer" class="footer">Made with endless love, for my husband</p>
+
+  <section id="surpriseScreen" class="glass">
+    <div class="eyebrow">Today is all about you</div>
+    <div class="poster-frame" style="margin-top:18px">
+      <img id="birthdayPoster" class="poster" src="12.jpeg" alt="Birthday poster for Shahzad Ji">
+    </div>
+    <h2 class="birthday-title">Happy Birthday Shahzad Ji</h2>
+    <p class="message">To my favourite person, my happiness and my forever love. 💜<br>May your life always shine with success, peace and endless smiles.</p>
+    <div class="date">OCTOBER 10 · FOREVER MY LOVE</div>
+    <p class="signature">Forever yours, with love ♡</p>
+    <button class="button" id="celebrateBtn">🎉 CELEBRATE AGAIN</button>
+    <div class="actions">
+      <button class="secondary" id="backBtn">↩ Go Back</button>
+      <button class="secondary" id="shareBtn">♡ Share Love</button>
+    </div>
+  </section>
+</main>
+
+<div id="shareModal">
+  <div class="share-box">
+    <h3 style="font-family:Great Vibes,cursive;font-size:36px;color:#f6d98b;margin:0">Share Love ♡</h3>
+    <p style="font-size:11px;opacity:.6;margin:6px 0 18px">Send this surprise to Shahzad Ji</p>
+    <div class="share-opt" onclick="shareWhatsApp()">
+      <div style="font-size:26px">💬</div>
+      <div><b>WhatsApp</b><span>Direct send to Shahzad Ji</span></div>
+    </div>
+    <button onclick="closeShare()" style="margin-top:18px;padding:10px 24px;border-radius:50px;border:1px solid #ffffff30;background:transparent;color:#fff;cursor:pointer">Close ✕</button>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+for(let i=0;i<65;i++){let s=document.createElement("span");s.className="star";s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";s.style.animationDelay=Math.random()*3+"s";document.getElementById("stars").appendChild(s);}
+
+let opened = false;
+function openSurprise(){
+  if(opened) return;
+  opened = true;
+  $("tapScreen").style.display="none";$("footer").style.display="none";
+  $("surpriseScreen").style.display="block";
+  $("surpriseScreen").classList.remove("pop");void $("surpriseScreen").offsetWidth;
+  $("surpriseScreen").classList.add("pop");launchConfetti();
+}
+function goBack(){
+  $("surpriseScreen").style.display="none";$("tapScreen").style.display="block";$("footer").style.display="block";
+  opened = false;
+  startAutoOpen(); // wapas auto start
+}
+
+// --- AUTO OPEN LOGIC ---
+function startAutoOpen(){
+  let progress = 0;
+  const bar = $("loaderProgress");
+  const text = $("countText");
+  const interval = setInterval(()=>{
+    progress += 1.2;
+    bar.style.width = progress + "%";
+    let sec = Math.ceil((100 - progress)/33);
+    if(sec > 0) text.innerText = "OPENING IN "+sec+"s...";
+    else text.innerText = "OPENING... 💜";
+    
+    if(progress >= 100){
+      clearInterval(interval);
+      openSurprise();
+    }
+  }, 30); // 30ms * 100 = 3 sec me full
+}
+
+// Page load hote hi auto start
+window.addEventListener("load", ()=>{
+  setTimeout(startAutoOpen, 500);
+});
+
+$("openBtn").addEventListener("click",openSurprise);
+$("backBtn").addEventListener("click",goBack);
+$("celebrateBtn").addEventListener("click",launchConfetti);
+
+$("shareBtn").addEventListener("click",()=>{$("shareModal").style.display="grid";});
+function closeShare(){$("shareModal").style.display="none";}
+$("shareModal").addEventListener("click",e=>{if(e.target.id==="shareModal")closeShare();});
+function shareWhatsApp(){
+  const msg = encodeURIComponent("💜 Happy Birthday Shahzad Ji 💜\n\nfor my husband • October 10\n\nTo my favourite person, my forever love. May your life shine with success & endless smiles! ♡\n\n"+location.href);
+  window.open("https://wa.me/?text="+msg,"_blank");
+}
+
+// confetti
+const canvas=$("confetti"),ctx=canvas.getContext("2d");let W=0,H=0,particles=[],frame=0,aid=null;
+function resize(){const dpr=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;canvas.width=W*dpr;canvas.height=H*dpr;canvas.style.width=W+"px";canvas.style.height=H+"px";ctx.setTransform(dpr,0,0,dpr,0,0);}
+addEventListener("resize",resize);resize();
+function launchConfetti(){
+  particles=[];const colors=["#f6d98b","#fff0bd","#d8adff","#f7a9cf","#ffffff","#b78bff"];
+  for(let i=0;i<160;i++){particles.push({x:Math.random()*W,y:-20-Math.random()*H*.6,r:3+Math.random()*4,speed:2+Math.random()*4,drift:Math.random()*2-1,angle:Math.random()*6,spin:Math.random()*.12-.06,color:colors[Math.floor(Math.random()*colors.length)]})}
+  cancelAnimationFrame(aid);frame=0;loop();
+}
+function loop(){
+  ctx.clearRect(0,0,W,H);frame++;
+  particles.forEach(p=>{
+    ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.angle);
+    ctx.fillStyle=p.color;ctx.fillRect(-p.r/2,-p.r/2,p.r,p.r*1.7);ctx.restore();
+    p.y+=p.speed;p.x+=p.drift+Math.sin(p.y*.015);p.angle+=p.spin;
+  });
+  particles=particles.filter(p=>p.y<H+20);
+  if(particles.length && frame<500){aid=requestAnimationFrame(loop);}else{ctx.clearRect(0,0,W,H);}
+}
+</script>
+</body>
+</html>
